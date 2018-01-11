@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import Memo from './Memo/Memo';
-// import AppendMemo from './Memo/AppendMemo'
 
 class Memos extends Component {
     render() {
@@ -16,7 +15,7 @@ class Memos extends Component {
                 content={memo.content}
                 time={memo.time}
                 clear={memo.clear}
-                nameChanged={(event) => this.props.changed(event, memo.id)}/>
+                nameChanged={(event) => this.props.changed(event, memo.id)} />
         });
     }
 }

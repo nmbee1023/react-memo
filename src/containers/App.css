@@ -22,15 +22,11 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 .input {
   text-align: center;
+  font-size: 12px;
   margin: auto;
-  width: 40%;
+  width: 30%;
   margin-bottom: 10px;
 }
 

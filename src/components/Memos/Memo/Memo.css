@@ -4,16 +4,40 @@
     border: 1px solid #eee;
     box-shadow: 0 2px 3px #ccc;
     padding: 16px;
-    text-align: center;
     margin-bottom: 1px;
 }
 
 @media (min-width: 500px) {
     .Memo {
-        width: 450px;
+        width: 80px;
     }
 }
 
 .Memo th {
-    text-align: center;
-  }
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.Memo td {
+    font-size: 12px;
+    padding: 10px;
+    text-align: left;
+}
+
+.clearButton {
+    margin: auto;
+    padding: 5px;
+    width: 40px;
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.clearButton:hover {
+    margin: auto;
+    width: 40px;
+    padding: 5px;
+    background-color: red;
+    color: #eee;
+    font-weight: bold;
+}

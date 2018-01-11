@@ -40,25 +40,29 @@ class Memo extends Component {
         const style = {
             fontSize: '20px'
         }
-        const clearButton = {
-            'cursor': 'pointer',
-            ':hover': {
-                'backgroundColor': 'lightblue',
-                'color': 'red',
-                'fontWeight': 'bold'
-            }
+        const nameStyle = {
+            'width': '100px'
+        }
+        const positionStyle = {
+            'width': '50px'
+        }
+        const memoStyle = {
+            'width': '1000px'
+        }
+        const timeStyle = {
+            'width': '170px'
         }
 
         return (
             <tr className={classes.Memo} style={style}>
-                <td>{this.props.name}</td>
-                <td>{this.props.position}</td>
-                <td>{this.props.content}</td>
-                <td>{this.props.time}</td>
-                <td style={clearButton} onClick={this.props.click}>{this.props.clear}</td>
+                <td style={nameStyle}>{this.props.name}</td>
+                <td style={positionStyle}>{this.props.position}</td>
+                <td style={memoStyle}>{this.props.content}</td>
+                <td style={timeStyle}>{this.props.time}</td>
+                <td>
+                    <div className={classes.clearButton} onClick={this.props.click}>{this.props.clear}</div>
+                </td>
             </tr>
-        // <p>{this.props.children}</p> <input type="text"
-        // onChange={this.props.nameChanged} value={this.props.name}/>
         )
     };
 }
