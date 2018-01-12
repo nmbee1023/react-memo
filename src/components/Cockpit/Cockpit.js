@@ -15,7 +15,6 @@ const cockpit = (props) => {
             </h1>
             <p className={assignedClasses.join(' ')}>
                 Write your memos or event on your box and reflect it at the same time</p>
-            
         </div>
 
     );
