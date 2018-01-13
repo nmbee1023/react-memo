@@ -13,6 +13,7 @@ const cockpit = (props) => {
         <div>
             <h1>React App -Memo-
             </h1>
+            <h2>{props.appTitle}</h2>
             <p className={assignedClasses.join(' ')}>
                 Write your memos or event on your box and reflect it at the same time</p>
         </div>

@@ -284,7 +284,7 @@ In the WebStorm menu `Run` select `Edit Configurations...`. Then click `+` and s
 
 Start your app by running `npm start`, then press `^D` on macOS or `F9` on Windows and Linux or click the green debug icon to start debugging in WebStorm.
 
-The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine. 
+The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine.
 
 ## Formatting Code Automatically
 
@@ -1822,7 +1822,7 @@ If you’re using [Apache HTTP Server](https://httpd.apache.org/), you need to c
     RewriteRule ^ index.html [QSA,L]
 ```
 
-It will get copied to the `build` folder when you run `npm run build`. 
+It will get copied to the `build` folder when you run `npm run build`.
 
 If you’re using [Apache Tomcat](http://tomcat.apache.org/), you need to follow [this Stack Overflow answer](https://stackoverflow.com/a/41249464/4878474).
 
@@ -1883,7 +1883,7 @@ See [this](https://medium.com/@to_pe/deploying-create-react-app-on-microsoft-azu
 
 Install the Firebase CLI if you haven’t already by running `npm install -g firebase-tools`. Sign up for a [Firebase account](https://console.firebase.google.com/) and create a new project. Run `firebase login` and login with your previous created Firebase account.
 
-Then run the `firebase init` command from your project’s root. You need to choose the **Hosting: Configure and deploy Firebase Hosting sites** and choose the Firebase project you created in the previous step. You will need to agree with `database.rules.json` being created, choose `build` as the public directory, and also agree to **Configure as a single-page app** by replying with `y`.
+Then run the `firebase init` command from your project’s root. You need to choose the **Hosting: Configure and deploy Firebase Hosting sites** and choose the Firebase project you created in the previous step. You will need to agree with `.rules.json` being created, choose `build` as the public directory, and also agree to **Configure as a single-page app** by replying with `y`.
 
 ```sh
     === Project Setup
@@ -1894,14 +1894,14 @@ Then run the `firebase init` command from your project’s root. You need to cho
 
     ? What Firebase project do you want to associate as default? Example app (example-app-fd690)
 
-    === Database Setup
+    ===  Setup
 
-    Firebase Realtime Database Rules allow you to define how your data should be
+    Firebase Realtime  Rules allow you to define how your data should be
     structured and when your data can be read from and written to.
 
-    ? What file should be used for Database Rules? database.rules.json
-    ✔  Database Rules for example-app-fd690 have been downloaded to database.rules.json.
-    Future modifications to database.rules.json will update Database Rules when you run
+    ? What file should be used for  Rules? .rules.json
+    ✔   Rules for example-app-fd690 have been downloaded to .rules.json.
+    Future modifications to .rules.json will update  Rules when you run
     firebase deploy.
 
     === Hosting Setup
@@ -1925,8 +1925,8 @@ Now, after you create a production build with `npm run build`, you can deploy it
 ```sh
     === Deploying to 'example-app-fd690'...
 
-    i  deploying database, hosting
-    ✔  database: rules ready to deploy.
+    i  deploying , hosting
+    ✔  : rules ready to deploy.
     i  hosting: preparing build directory for upload...
     Uploading: [==============================          ] 75%✔  hosting: build folder uploaded successfully
     ✔  hosting: 8 files uploaded successfully
@@ -2218,7 +2218,7 @@ To resolve this:
 1. Open an issue on the dependency's issue tracker and ask that the package be published pre-compiled.
   * Note: Create React App can consume both CommonJS and ES modules. For Node.js compatibility, it is recommended that the main entry point is CommonJS. However, they can optionally provide an ES module entry point with the `module` field in `package.json`. Note that **even if a library provides an ES Modules version, it should still precompile other ES6 features to ES5 if it intends to support older browsers**.
 
-2. Fork the package and publish a corrected version yourself. 
+2. Fork the package and publish a corrected version yourself.
 
 3. If the dependency is small enough, copy it to your `src/` folder and treat it as application code.
 
